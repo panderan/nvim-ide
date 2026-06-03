@@ -1,4 +1,10 @@
 return {
+  -- 安装 which-key 插件
+  {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    opts = {},
+  },
   {
     "folke/snacks.nvim",
     priority = 1000,
@@ -8,6 +14,7 @@ return {
       -- your configuration comes here
       -- or leave it empty to use the default settings
       -- refer to the configuration section below
+      image = { enabled = false },
       bigfile = { enabled = true },
       dashboard = { enabled = true },
       explorer = { enabled = true },

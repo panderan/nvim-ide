@@ -28,7 +28,7 @@ require("lazy").setup({
     { import = "plugins" },
   },
   git = {
-    timeout = 120,
+    timeout = 12000,
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
