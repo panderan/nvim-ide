@@ -1,0 +1,8 @@
+{
+  "clangd.path": "clangd",
+  "clangd.arguments": [
+    "--background-index",
+    "--log=verbose",
+    "--query-driver=**"
+  ]
+}

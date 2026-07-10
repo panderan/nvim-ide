@@ -17,7 +17,7 @@ return {
       image = { enabled = false },
       bigfile = { enabled = true },
       dashboard = { enabled = true },
-      explorer = { enabled = true },
+      explorer = { enabled = true, cwd = vim.fn.getcwd(), follow_file = false, root = false },
       indent = { enabled = true },
       input = { enabled = true },
       picker = {

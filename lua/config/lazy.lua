@@ -34,7 +34,7 @@ require("lazy").setup({
   -- colorscheme that will be used when installing plugins.
   install = { colorscheme = { "habamax" } },
   -- automatically check for plugin updates
-  checker = { enabled = true },
+  checker = { enabled = false },
 })
 
 vim.opt.number = true
@@ -49,7 +49,7 @@ vim.opt.foldlevel = 99
 vim.opt.termguicolors = true
 vim.opt.wrap = false
 vim.opt.backspace = "indent,eol,start"
-vim.opt.autochdir = true
+vim.opt.autochdir = false
 vim.opt.hlsearch = true
 vim.cmd("syntax on")
 vim.opt.compatible = false
