@@ -10,7 +10,7 @@ return {
     vim.o.autoread = true -- Required for `vim.g.opencode_opts.events.reload`
 
     -- Recommended/example keymaps
-    vim.keymap.set({ "n", "x" }, "<M-a>", function() require("opencode").ask("@this: ") end, { desc = "Ask OpenCode…" })
+    vim.keymap.set({ "n", "x" }, "<M-a>", function() require("opencode").ask("") end, { desc = "Ask OpenCode…" })
     vim.keymap.set({ "n", "x" }, "<M-x>", function() require("opencode").select() end,       { desc = "Select OpenCode…" })
 
     vim.keymap.set({ "n", "x" }, "go",  function() return require("opencode").operator("@this ") end,        { desc = "Append range to OpenCode", expr = true })
