@@ -7,8 +7,14 @@ return {
         component_separators = { left = '', right = ''},
         section_separators = { left = '', right = ''},
         disabled_filetypes = {
-          statusline = {},
-          winbar = {},
+            statusline = {
+              "AgenticChat", "AgenticInput", "AgenticCode",
+              "AgenticFiles", "AgenticDiagnostics",
+            },
+            winbar = {
+              "AgenticChat", "AgenticInput", "AgenticCode",
+              "AgenticFiles", "AgenticDiagnostics",
+            },
         },
         ignore_focus = {},
         always_divide_middle = true,

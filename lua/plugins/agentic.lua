@@ -21,7 +21,12 @@ return {
             -- default_mode = "",
             -- initial_model = "",
         }
-    }
+    },
+    diff_preview = {
+      enabled = true,
+      layout = "split",  -- "split" or "inline"
+      center_on_navigate_hunks = true,
+    },
   },
 
   config = function(_, opts)
@@ -36,24 +41,30 @@ return {
   keys = {
     {
       "<C-\\>",
-      function() require("agentic").toggle() end,
+      function() require("agentic").toggle({auto_add_to_context = false, focus_prompt = false}) end,
       mode = { "n", "v", "i" },
       desc = "Toggle Agentic Chat"
     },
     {
       "<A-i>i",
-      function() require("agentic").add_selection_or_file_to_context() end,
+      function() require("agentic").add_selection_or_file_to_context({focus_prompt = false}) end,
       mode = { "n", "v" },
       desc = "Add file or selection to Agentic to Context"
     },
     {
-      "<A-i>n",
-      function() require("agentic").new_session() end,
+      "<A-i>x",
+      function() require("agentic").stop_generation() end,
+      mode = { "n", "v", "i" },
+      desc = "Stop the agent's current generation or tool execution."
+    },
+    {
+      "<A-i>sn",
+      function() require("agentic").new_session({auto_add_to_context = false}) end,
       mode = { "n", "v", "i" },
       desc = "New Agentic Session"
     },
     {
-      "<A-i>r", -- ai Restore
+      "<A-i>sr", -- ai Restore
       function()
           require("agentic").restore_session()
       end,
@@ -64,7 +75,7 @@ return {
     {
       "<A-i>ad", -- ai Diagnostics
       function()
-          require("agentic").add_current_line_diagnostics()
+          require("agentic").add_current_line_diagnostics({focus_prompt = false})
       end,
       desc = "Add current line diagnostic to Agentic",
       mode = { "n" },
@@ -72,7 +83,7 @@ return {
     {
       "<A-i>aD", -- ai all Diagnostics
       function()
-          require("agentic").add_buffer_diagnostics()
+          require("agentic").add_buffer_diagnostics({focus_prompt = false})
       end,
       desc = "Add all buffer diagnostics to Agentic",
       mode = { "n" },
