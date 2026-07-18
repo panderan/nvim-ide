@@ -6,6 +6,7 @@ return {
     -- @module 'render-markdown'
     -- @type render.md.UserConfig
     opts = {
+        file_types = { "markdown", "md", "AgenticChat" },
         latex = { enabled = false },
         heading = {
             position = "inline",
