@@ -93,7 +93,7 @@ return {
       function()
           require("agentic").switch_provider()
       end,
-      desc = "Add all buffer diagnostics to Agentic",
+      desc = "Switch to a different ACP provider mid-session.",
       mode = { "n" },
     },
   },
