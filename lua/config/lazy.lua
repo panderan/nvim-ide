@@ -67,3 +67,11 @@ vim.keymap.set('n', '<M-Down>', '<Cmd>resize -2<CR>', { desc = "Decrease horizon
 vim.keymap.set('n', '<M-Left>', '<Cmd>vertical resize -5<CR>', { desc = "Decrease vertical window size" })
 vim.keymap.set('n', '<M-Right>', '<Cmd>vertical resize +5<CR>', { desc = "Increase vertical window size" })
 
+vim.keymap.set('n', '<leader>wh', '<C-w>h', { desc = "jump to left window" })
+vim.keymap.set('n', '<leader>wl', '<C-w>l', { desc = "jump to right window" })
+vim.keymap.set('n', '<leader>wk', '<C-w>k', { desc = "jump to up window" })
+vim.keymap.set('n', '<leader>wj', '<C-w>j', { desc = "jump to down window" })
+vim.keymap.set('n', '<leader>wt', '<C-w>t', { desc = "jump to top-left window" })
+vim.keymap.set('n', '<leader>wb', '<C-w>b', { desc = "jump to bottom-right window" })
+vim.keymap.set('n', '<leader>wp', '<C-w>p', { desc = "jump to previous window" })
+
