@@ -26,6 +26,43 @@ return {
       enabled = true,
       layout = "split",  -- "split" or "inline"
       center_on_navigate_hunks = true,
+        next_hunk = "]c",
+        prev_hunk = "[c",
+    },
+    keymaps = {
+      widget = {
+        close = "q",
+        change_mode = {
+          { "<S-Tab>", mode = { "i", "n", "v" } },
+        },
+        switch_provider = "<localLeader>s",
+        switch_model = "<localLeader>m",
+        change_thought_level = "<localLeader>t",
+        open_options = "<localLeader>o",
+      },
+      prompt = {
+        submit = {
+          "<CR>",
+          { "<C-s>", mode = { "n", "v", "i" } },
+        },
+        paste_image = {
+          { "<localLeader>p", mode = { "n" } },
+          { "<C-v>", mode = { "i" } },
+        },
+        accept_completion = {
+          { "<Tab>", mode = { "i" } },
+        },
+      },
+      chat = {
+        next_heading = "]]",
+        prev_heading = "[[",
+        next_tool_call = "]t",
+        prev_tool_call = "[t",
+      },
+      permission = {
+        cycle_next = "<C-n>",
+        cycle_prev = "<C-p>",
+      },
     },
   },
 
