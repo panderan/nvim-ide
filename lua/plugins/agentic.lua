@@ -12,7 +12,7 @@ return {
             command = vim.fn.has("win32") == 1 and "opencode.cmd" or "opencode",
             args = {"acp"},
             default_mode = "plan",
-            initial_model = "deepseek/deepseek-v4-flash",
+            initial_model = "xiaomi-token-plan-cn/mimo-v2.5",
         },
         ["cursor-acp"] = {
             name = "cursor",
@@ -78,13 +78,13 @@ return {
   keys = {
     {
       "<C-\\>",
-      function() require("agentic").toggle({auto_add_to_context = false, focus_prompt = false}) end,
+      function() require("agentic").toggle({auto_add_to_context = false, focus_prompt = true}) end,
       mode = { "n", "v", "i" },
       desc = "Toggle Agentic Chat"
     },
     {
       "<A-i>i",
-      function() require("agentic").add_selection_or_file_to_context({focus_prompt = false}) end,
+      function() require("agentic").add_selection_or_file_to_context({focus_prompt = true}) end,
       mode = { "n", "v" },
       desc = "Add file or selection to Agentic to Context"
     },

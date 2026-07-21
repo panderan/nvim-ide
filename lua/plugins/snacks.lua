@@ -52,7 +52,14 @@ return {
       scroll = { enabled = true },
       statuscolumn = { enabled = true },
       words = { enabled = true },
-      terminal = { start_insert = false, auto_insert = false },
+      terminal = {
+          start_insert = false,
+          auto_insert = false,
+          win = {
+              split = "belowright",
+              height = 0.4,
+          },
+      },
     },
     keys = {
       -- Top Pickers & Explorer
