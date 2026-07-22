@@ -75,3 +75,5 @@ vim.keymap.set('n', '<leader>wt', '<C-w>t', { desc = "jump to top-left window" }
 vim.keymap.set('n', '<leader>wb', '<C-w>b', { desc = "jump to bottom-right window" })
 vim.keymap.set('n', '<leader>wp', '<C-w>p', { desc = "jump to previous window" })
 
+vim.keymap.set('n', '<C-e>', 'j<C-e>', { noremap = true, silent = true })
+vim.keymap.set('n', '<C-r>', 'k<C-y>', { noremap = true, silent = true })
