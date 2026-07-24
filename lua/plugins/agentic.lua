@@ -12,7 +12,7 @@ return {
             command = vim.fn.has("win32") == 1 and "opencode.cmd" or "opencode",
             args = {"acp"},
             default_mode = "plan",
-            initial_model = "xiaomi-token-plan-cn/mimo-v2.5",
+            initial_model = "xiaomi-token-plan-cn/mimo-v2.5-pro",
         },
         ["cursor-acp"] = {
             name = "cursor",
