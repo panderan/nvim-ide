@@ -15,6 +15,13 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+vim.api.nvim_set_hl(0, "MarkdownTile1Bg", { fg = "#282828", bg = "#FABD2F", bold = true, })
+vim.api.nvim_set_hl(0, "MarkdownTile2Bg", { fg = "#EBDBB2", bg = "#62693E", bold = true, })
+vim.api.nvim_set_hl(0, "MarkdownTile3Bg", { fg = "#EBDBB2", bg = "#695F5A", bold = true, })
+vim.api.nvim_set_hl(0, "MarkdownTile4Bg", { fg = "#B8BB26", bg = "#504945", bold = true, })
+vim.api.nvim_set_hl(0, "MarkdownTile5Bg", { fg = "#B8BB26", bg = "#3B3633", bold = true, })
+vim.api.nvim_set_hl(0, "MarkdownTile6Bg", { fg = "#B8BB26", bg = "#332F2C", bold = true, })
+
 -- Make sure to setup `mapleader` and `maplocalleader` before
 -- loading lazy.nvim so that mappings are correct.
 -- This is also a good place to setup other settings (vim.opt)

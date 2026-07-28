@@ -12,12 +12,12 @@ return {
             position = "inline",
             border = true,
             backgrounds = {
-                'RenderMarkdownH1Bg',
-                'PmenuBorder',
-                'RenderMarkdownH5Bg',
-                'RenderMarkdownH2Bg',
-                'RenderMarkdownH3Bg',
-                'RenderMarkdownH6Bg',
+                'MarkdownTile1Bg',
+                'MarkdownTile2Bg',
+                'MarkdownTile3Bg',
+                'MarkdownTile4Bg',
+                'MarkdownTile5Bg',
+                'MarkdownTile6Bg',
             },
             foregrounds = {
                 'RenderMarkdownH1',
