@@ -44,7 +44,10 @@ return {
 	      config = {
 	        dirs = { vim.fn.stdpath("config") },
 	      }
-	    }
+	    },
+        sources = {
+          explorer = { git_status = false },
+        }
       },
       notifier = { enabled = true },
       quickfile = { enabled = true },
