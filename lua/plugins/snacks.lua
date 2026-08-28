@@ -47,6 +47,8 @@ return {
 	    },
         sources = {
           explorer = { git_status = false },
+          grep = { ignored = true },
+          files = { ignored = true },
         }
       },
       notifier = { enabled = true },
